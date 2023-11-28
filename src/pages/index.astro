@@ -1,0 +1,275 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
+import HeroBanner from "../components/HeroBanner.astro";
+---
+
+<Layout title="Fr0ze Studio - Accueil">
+  <Navbar />
+  <main>
+    <HeroBanner title="Accueil" />
+
+    <div class="paper-white pb-20">
+      <!-- PARTIE "ETRE ECLIPSE DE LA TOILE" -->
+      <div
+        class="flex flex-col items-center justify-center pt-24 pb-12 space-y-2 px-12
+	   md:flex-row md:space-y-0 md:space-x-20"
+      >
+        <img class="shadow-2xl" src="/video-min.gif" alt="" />
+        <div class="max-w-lg">
+          <h1>Etre éclipsé de la toile est quelque d'horrible</h1>
+          <h2>N'est-ce pas ?</h2>
+          <p class="mb-2">
+            Vous avez une vision, une ambitions brûlante qui vous galvanise,
+            prêt à prendre le monde d'assaut. Néanmoins, l'ombre de
+            l'invisibilité plane, la menace de voir vos vidéos englouties dans
+            le tumulte du web.
+          </p>
+          <p>
+            Une solution s'impose : un maestro de la vidéo pour donner vie à vos
+            créations, les transcender et les faire briller de mille feux.
+          </p>
+        </div>
+      </div>
+      <!-- PARTIE "IL ETAIT UNE FOIS UN MONTEUR" -->
+      <div
+        class="flex flex-col items-center justify-center space-y-2 px-12
+	  md:flex-row md:space-y-0 md:space-x-20"
+      >
+        <div class="space-y-4 max-w-lg">
+          <h1 class="pb-2">Il était une fois un monteur...</h1>
+          <h2>Maximillien Hornoy</h2>
+          <p class="pb-2">
+            Lassé des boulots superflus et sans valeur ajoutée, je me suis lancé
+            avec succès dans le montage vidéo, au service des influenceurs et
+            professionnels.
+          </p>
+          <p>
+            Contactez-moi dès maintenant pour bénéficier de mes services et
+            donner vie à vos projets vidéo.
+          </p>
+          <p>Merci de votre visite !</p>
+        </div>
+        <img src="froze_tapped.png" alt="froze_tapped" />
+      </div>
+    </div>
+
+    <div
+      class="paper-black flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12"
+    >
+      <h1>Mon atout : le son 🔊</h1>
+      <h2>Qualité audio > Qualité vidéo</h2>
+      <p>À votre avis, pourquoi dit-on "audiovisuel" et non "visuel audio" ?</p>
+      <p>
+        La raison pour laquelle "audio" est mentionné en premier est
+        principalement due à l'ordre de perception humaine. En général, l'ouïe
+        est considérée comme le premier sens sollicité dans la communication et
+        la compréhension des informations.
+      </p>
+      <p>
+        L'émotion, la tension et même la peur s'expriment en premier lieu à
+        travers les sons qui nous enveloppent.
+      </p>
+      <p>
+        C'est dans cet art subtil que réside mon expertise: faire vibrer les
+        spectateurs au plus profond de leur être.
+      </p>
+
+      <!-- Aspect Ratio Wrapper -->
+      <div class="relative w-full" style="padding-top: 56.25%;">
+        <!-- 56.25% for 16:9 aspect ratio -->
+        <!-- Iframe -->
+        <iframe
+          class="absolute w-full h-full top-0 left-0"
+          src="https://www.youtube.com/embed/JsW54Ik9d6U"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <div
+      class="paper-white flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12"
+    >
+      <h1>Monteur, je suis là,</h1>
+      <h2>
+        L'histoire d'un monteur vidéo qui a transformé sa passion en carrière...
+      </h2>
+      <p>
+        Il y a quelques temps, j'étais comme beaucoup d'entre vous. Passionné
+        par le montage vidéo, je passais des heures à peaufiner chaque détail,
+        chaque transition, chaque effet. Mais malgré tout mon dévouement, je
+        peinais à trouver des clients et à vivre de ma passion.
+      </p>
+      <p>
+        Puis, j'ai compris. J'ai décidé de prendre les choses en main,
+        d'apprendre, de me former, de réseauter. Aujourd'hui, je reçois
+        quotidiennement des messages de personnes souhaitant que je monte leurs
+        vidéos.
+      </p>
+      <p>
+        Grace à des astuces de montage et une bonne négociation je fait
+        l'équivalent qu'un salarié qui travail 30 heures par semaine en 30h par
+        mois.
+      </p>
+    </div>
+    <div
+      class="paper-black flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12
+	   lg:flex-row lg:space-y-0 lg:space-x-20"
+    >
+      <img src="DM_insta.png" alt="DM_insta" />
+      <div class="space-y-10">
+        <div class="flex flex-col items-center">
+          <h1>Ne perdez pas autant de temps que moi</h1>
+          <h2 class="mb-5">Rejoignez mon canal Télégram</h2>
+          <ul class="items-center space-x-2 pb-4">
+            <li>• Je partage mes astuces</li>
+            <li>• Avant premiere</li>
+            <li>• Exclusivité</li>
+            <li>• De la transparence</li>
+            <li>(Contenu fréquent)</li>
+            <li>Et tout ça <b class="underline">GRATUITEMENT</b></li>
+          </ul>
+          <a href="https://t.me/oze_monteur">
+            <img
+              class="hover:-translate-y-1 hover:scale-105 transition-transform duration-300"
+              width=" 300"
+              src="canal_telegram.png"
+            /></a
+          >
+        </div>
+
+        <div class="flex flex-col items-center">
+          <h1>Améliorez vos compétences et votre CA en 60 minutes</h1>
+          <h2 class="mb-5">Prenez rendez vous</h2>
+          <ul class="items-center space-x-2 pb-4">
+            <li>
+              • Coaching en Montage Vidéo : Ensemble, nous analyserons vos
+              vidéos, mettant en lumière ce qui fonctionne et ce qui peut être
+              amélioré.
+            </li>
+            <li>
+              • Coaching pour Augmenter votre CA : Apprenez les stratégies qui
+              m'ont permis de transformer ma passion en carrière. Perfectionnez
+              votre portfolio, créez un réseau solide et maximisez votre
+              démarchage.
+            </li>
+          </ul>
+          <a href="https://calendly.com/studioze">
+            <img
+              class="hover:-translate-y-1 hover:scale-105 transition-transform duration-300"
+              width=" 300"
+              src="call_me.png"
+            /></a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="paper-white flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12"
+    >
+      <h1>Envie d'aller plus loin ?</h1>
+
+      <p>
+        Unifiez votre style et optimisez la qualité de vos vidéos. Qu'il
+        s'agisse de TikTok ou de Youtube, je prends en charge l'édition pour
+        vous faire économiser du temps et maximiser l'impact, vous permettant
+        ainsi de vous concentrer sur la croissance de votre entreprise.
+      </p>
+
+      <p>
+        Faites le premier pas vers une meilleure gestion de votre temps et un
+        contenu de qualité supérieure dès aujourd'hui.
+      </p>
+      <div class="flex justify-around items-center w-full">
+        <a href="/portfolio"
+          ><h3
+            class="text-5xl text-slate-700 hover:-translate-y-1 hover:scale-105 hover:underline transition-transform duration-300"
+          >
+            PORTFOLIO
+          </h3></a
+        >
+        <div>
+          <ul id="social-links" class="flex space-x-5">
+            <li>
+              <a
+                class="hover:scale-110 hover:invert transform transition-all duration-300"
+                href="https://www.instagram.com/fr.0ze/"
+                ><img width="50" src="icon-instagram.png" /></a
+              >
+            </li>
+            <li>
+              <a href="https://x.com/Fr_0ze"
+                ><img
+                  class="hover:scale-105 hover:invert transform transition-all duration-300"
+                  width="50"
+                  src="icon-tiktok.png"
+                /></a
+              >
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@fr.oze"
+                ><img
+                  class="hover:scale-105 hover:invert transform transition-all duration-300"
+                  width="50"
+                  src="icon-twitter.png"
+                /></a
+              >
+            </li>
+          </ul>
+
+          <p
+            class="hover-light-effect hover:text-white hover:scale-105 transform transition-all duration-300 ease-in-out"
+          >
+            Contactez-moi
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  div.paper-black {
+    background-image: url("/bg_black_1.jpeg");
+    background-size: 400%; /* Enlarges the image to 400% of its original size */
+    background-position: center center; /* Centers the background image */
+  }
+
+  div.paper-white h1 {
+    @apply text-slate-800 text-2xl;
+  }
+  div.paper-white h2 {
+    @apply text-slate-500 text-lg;
+  }
+  div.paper-white p {
+    @apply text-black text-base;
+  }
+
+  div.paper-black h1 {
+    @apply text-white text-2xl;
+  }
+  div.paper-black h2 {
+    @apply text-slate-500 text-xl;
+  }
+  div.paper-black p {
+    @apply text-white text-base;
+  }
+
+  div.paper-white {
+    background-image: url("/bg_white.png");
+    background-size: 400%; /* Enlarges the image to 400% of its original size */
+    background-repeat: no-repeat;
+    background-position: center calc(100% + 30px); /* Centers the background image */
+  }
+</style>

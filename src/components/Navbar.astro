@@ -1,0 +1,79 @@
+<nav
+  class="navbar flex flex-col items-center uppercase lg:flex-row justify-around space-y-5"
+>
+  <img width="200" src="logo.png" />
+  <!-- TODO : Resize le logo sous GIMP -->
+  <ul
+    class="flex flex-col items-center space-x-5 md:flex-row space-y-2 md:space-y-0"
+  >
+    <li
+      class="hover:scale-105 hover:-translate-y-1 transition-all ease-in delay-100"
+    >
+      <a href="/">Accueil</a>
+    </li>
+    <li
+      class="hover:scale-105 hover:-translate-y-1 transition-all ease-in delay-100"
+    >
+      <a href="/portfolio">Portfolio</a>
+    </li>
+    <li
+      class="hover:scale-105 hover:-translate-y-1 transition-all ease-in delay-100"
+    >
+      <a href="/boutique">Boutique</a>
+    </li>
+  </ul>
+
+  <div>
+    <ul id="social-links" class="flex space-x-5">
+      <li>
+        <a
+          class="hover:scale-110 hover:invert transform transition-all duration-300"
+          href="https://www.instagram.com/fr.0ze/"
+          ><img width="50" src="icon-instagram.png" /></a
+        >
+      </li>
+      <li>
+        <a href="https://x.com/Fr_0ze"
+          ><img
+            class="hover:scale-105 hover:invert transform transition-all duration-300"
+            width="50"
+            src="icon-tiktok.png"
+          /></a
+        >
+      </li>
+      <li>
+        <a href="https://www.tiktok.com/@fr.oze"
+          ><img
+            class="hover:scale-105 hover:invert transform transition-all duration-300"
+            width="50"
+            src="icon-twitter.png"
+          /></a
+        >
+      </li>
+    </ul>
+
+    <p
+      class="hover-light-effect hover:text-white hover:scale-105 transform transition-all duration-300 ease-in-out"
+    >
+      Contactez-moi
+    </p>
+  </div>
+</nav>
+<style>
+  nav.navbar {
+    background-image: url("/bg_white.png");
+    background-size: 150%; /* Enlarges the image to 400% of its original size */
+    background-repeat: no-repeat;
+    background-position: center calc(100% + 30px); /* Centers the background image */
+  }
+
+  nav.navbar a {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .hover-light-effect:hover {
+    /* Example of custom light effect using box-shadow */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White glow */
+  }
+</style>
