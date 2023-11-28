@@ -11,7 +11,7 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
   <main>
     <HeroBanner title="Accueil" />
 
-    <div class="paper-white pb-20">
+    <div class="paper-white paper-white-1 pb-20">
       <!-- PARTIE "ETRE ECLIPSE DE LA TOILE" -->
       <div
         class="flex flex-col items-center justify-center pt-24 pb-12 space-y-2 px-12
@@ -87,29 +87,34 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
     </div>
 
     <div
-      class="paper-white flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12"
+      class="paper-white-2 flex flex-col paper-white space-y-5 pt-12 px-32 pb-12 items-center"
     >
-      <h1>Monteur, je suis là,</h1>
-      <h2>
-        L'histoire d'un monteur vidéo qui a transformé sa passion en carrière...
-      </h2>
-      <p>
-        Il y a quelques temps, j'étais comme beaucoup d'entre vous. Passionné
-        par le montage vidéo, je passais des heures à peaufiner chaque détail,
-        chaque transition, chaque effet. Mais malgré tout mon dévouement, je
-        peinais à trouver des clients et à vivre de ma passion.
-      </p>
-      <p>
-        Puis, j'ai compris. J'ai décidé de prendre les choses en main,
-        d'apprendre, de me former, de réseauter. Aujourd'hui, je reçois
-        quotidiennement des messages de personnes souhaitant que je monte leurs
-        vidéos.
-      </p>
-      <p>
-        Grace à des astuces de montage et une bonne négociation je fait
-        l'équivalent qu'un salarié qui travail 30 heures par semaine en 30h par
-        mois.
-      </p>
+      <div
+        class="justify-center flex flex-col items-center text-center max-w-4xl"
+      >
+        <h1>Monteur, je suis là,</h1>
+        <h2>
+          L'histoire d'un monteur vidéo qui a transformé sa passion en
+          carrière...
+        </h2>
+        <p>
+          Il y a quelques temps, j'étais comme beaucoup d'entre vous. Passionné
+          par le montage vidéo, je passais des heures à peaufiner chaque détail,
+          chaque transition, chaque effet. Mais malgré tout mon dévouement, je
+          peinais à trouver des clients et à vivre de ma passion.
+        </p>
+        <p>
+          Puis, j'ai compris. J'ai décidé de prendre les choses en main,
+          d'apprendre, de me former, de réseauter. Aujourd'hui, je reçois
+          quotidiennement des messages de personnes souhaitant que je monte
+          leurs vidéos.
+        </p>
+        <p>
+          Grace à des astuces de montage et une bonne négociation je fait
+          l'équivalent qu'un salarié qui travail 30 heures par semaine en 30h
+          par mois.
+        </p>
+      </div>
     </div>
     <div
       class="paper-black flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12
@@ -164,7 +169,7 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
       </div>
     </div>
     <div
-      class="paper-white flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12"
+      class="paper-white paper-white-3 flex flex-col items-center text-center space-y-5 pt-12 px-12 pb-12"
     >
       <h1>Envie d'aller plus loin ?</h1>
 
@@ -234,12 +239,11 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
     color: white;
     font-size: 20px;
     line-height: 1.6;
-  }
 
-  div.paper-black {
     background-image: url("/bg_black_1.jpeg");
-    background-size: 400%; /* Enlarges the image to 400% of its original size */
-    background-position: center center; /* Centers the background image */
+    background-repeat: repeat-y; /* Repeats the background image vertically */
+    background-size: cover; /* Sets the background size to its natural size */
+    background-position: top center; /* Positions the background image at the top center */
   }
 
   div.paper-white h1 {
@@ -278,5 +282,33 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
     @media screen and (max-width: 400px) {
       background-size: 1600%;
     }
+  }
+
+  div.paper-white-1 {
+    background-image: url("/bg_paper_white_full.png");
+    background-size: cover; /* This will ensure the background covers the entire div */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  div.paper-white-1 {
+    background-image: url("/bg_white_1.jpg");
+    background-size: cover; /* This will ensure the background covers the entire div */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  div.paper-white-2 {
+    background-image: url("/bg_white_paper_top.png");
+    background-size: cover; /* This will ensure the background covers the entire div */
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  div.paper-white-3 {
+    background-image: url("/bg_white_paper_unscratched_top.png");
+    background-size: cover; /* This will ensure the background covers the entire div */
+    background-repeat: no-repeat;
+    background-position: center;
   }
 </style>
