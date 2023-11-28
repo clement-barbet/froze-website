@@ -265,7 +265,18 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
   div.paper-white {
     background-image: url("/bg_white.png");
     background-size: 400%; /* Enlarges the image to 400% of its original size */
+
     background-repeat: no-repeat;
     background-position: center calc(100% + 30px); /* Centers the background image */
+
+    @media screen and (min-width: 1200px) {
+      background-size: 150%;
+    }
+    @media screen and (max-width: 735px) {
+      background-size: 800%;
+    }
+    @media screen and (max-width: 400px) {
+      background-size: 1600%;
+    }
   }
 </style>
